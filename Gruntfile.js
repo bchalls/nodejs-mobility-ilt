@@ -7,15 +7,17 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     watch: {
       js: {
-        files: ['gruntfile.js', 'application.js', 'lib/**/*.js', 'test/**/*.js'],
+        files: ['gruntfile.js', 'application.js', 'lib/**/*.js',
+          'test/**/*.js'
+        ],
         options: {
-          livereload: true
+          livereload: 7777
         }
       },
       html: {
         files: ['public/views/**', 'app/views/**'],
         options: {
-          livereload: true
+          livereload: 7777
         }
       }
     },
@@ -151,7 +153,9 @@ module.exports = function(grunt) {
   grunt.registerTask('accept', ['env:local', 'shell:accept']);
 
   // Coverate tasks
-  grunt.registerTask('coverage', ['shell:coverage_unit', 'shell:coverage_accept']);
+  grunt.registerTask('coverage', ['shell:coverage_unit',
+    'shell:coverage_accept'
+  ]);
   grunt.registerTask('coverage-unit', ['shell:coverage_unit']);
   grunt.registerTask('coverage-accept', ['env:local', 'shell:coverage_accept']);
 

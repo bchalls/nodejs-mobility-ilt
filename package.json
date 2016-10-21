@@ -9,6 +9,7 @@
     "request": "~2.40.0"
   },
   "devDependencies": {
+    "grunt": "^1.0.1",
     "grunt-concurrent": "latest",
     "grunt-contrib-jshint": "^0.11.3",
     "grunt-contrib-watch": "latest",
