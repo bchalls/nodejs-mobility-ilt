@@ -1,25 +1,20 @@
-# FeedHenry Hello World MBaaS Server
+# weather-service [/weather-service]
 
-This is a blank 'hello world' FeedHenry MBaaS. Use it as a starting point for building your APIs. 
+'weather-service' endpoint.
 
-# Group Hello World API
+## weather [POST]
 
-# hello [/hello]
-
-'Hello world' endpoint.
-
-## hello [POST] 
-
-'Hello world' endpoint.
+'weather-service' endpoint.
 
 + Request (application/json)
     + Body
             {
-              "hello": "world"
+              "city": "Philadelphia",
+              "country": "US"
             }
 
 + Response 200 (application/json)
     + Body
             {
-              "msg": "Hello world"
+              "msg": "xx Celcius"
             }
